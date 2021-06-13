@@ -15,11 +15,32 @@ int main()
                 A[j + 1] = temp;
             }
         }
-        for (k = 0; k < 10; k++)
-        {
-            printf("%d ", A[k]);
-        }
-        printf("\n");
     }
+    printf("Sorting Ascending Order :\n");
+    for (k = 0; k < 10; k++)
+    {
+        printf("%d ", A[k]);
+    }
+    printf("\n");
+
+    for (i = 0; i < 10; i++)
+    {
+        for (j = 0; j < 9; j++)
+        {
+            if (A[j] < A[j + 1])
+            {
+                int temp;
+                temp = A[j];
+                A[j] = A[j + 1];
+                A[j + 1] = temp;
+            }
+        }
+    }
+    printf("Sorting Ascending Order :\n");
+    for (k = 0; k < 10; k++)
+    {
+        printf("%d ", A[k]);
+    }
+    printf("\n");
     return 0;
 }
